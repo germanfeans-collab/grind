@@ -20,7 +20,8 @@ function initSchema() {
       username TEXT UNIQUE NOT NULL,
       password TEXT NOT NULL,
       rol TEXT DEFAULT 'admin',
-      nombre TEXT
+      nombre TEXT,
+      socio_id INTEGER
     );
     CREATE TABLE IF NOT EXISTS socios (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
